@@ -1,3 +1,5 @@
+<div style="text-align: justify;">
+  
 # SecureSwipe
 
 ## Author Sinegugu Mthembu
@@ -10,3 +12,32 @@
 
 
 ![alt text](https://github.com/Sine-Mthembu/SecureSwipe/blob/main/data_dist.png?raw=true)
+# Feature Engineering and Data Analysis
+
+Feature engineering techniques were applied to create new variables that effectively capture transaction patterns and behaviors. This involved extracting additional information from the dataset, leveraging features such as date and time. For instance, our analysis revealed that fraudulent transactions are more prevalent during nighttime compared to the morning. Additionally, we discovered that, on average, fraudulent transactions tend to involve cash payments more frequently than other transaction types.
+
+![Number of transactions per week day](time_of_w.png)
+
+**Figure 1:** Number of transactions per week day.
+
+![Comparison of the number of transactions for each transaction type for fraudulent transactions](tran_type_label.png)
+
+**Figure 2:** Comparison of the number of transactions for each transaction type for fraudulent transactions.
+
+These newly engineered features play a crucial role in enhancing the performance of machine learning algorithms.
+
+## Feature Importance and Correlation Analysis
+
+After conducting thorough data analysis, it becomes essential to select the most important features for model training. Feature importance can be determined through correlation analysis. However, a prerequisite for correlation analysis is encoding non-numerical data into numerical formats. In our dataset, the encoding process was feature-specific.
+
+For instance, given the insight that "Make payment" and "Quick payment" transactions were likely targets for fraud, we employed encoding techniques such as label encoding and one-hot encoding for various columns. An example of a correlation matrix can be seen below.
+
+![Correlation matrix](corr.png)
+
+**Figure 3:** Correlation matrix.
+
+## Handling Fraudulent Transactions
+
+Fraudulent transactions themselves can be considered as outliers. Therefore, for this project, we have adopted the approach of leaving these outliers as they are. This decision was made to ensure that these anomalies are retained for analysis and model training.
+
+</div>
