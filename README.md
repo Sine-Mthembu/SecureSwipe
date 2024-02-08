@@ -1,26 +1,31 @@
-<div style="text-align: justify;">
+
   
 # SecureSwipe
 
 ## Author Sinegugu Mthembu
 ### Using synthetic data. Chosen models are XGBoost and Random frest classifier models
 
+<div style="text-align: justify;">
+  
 ##### This project aims to develop an advanced credit card fraud detection system leveraging cutting-edge feature engineering techniques. Our dataset comprises credit card transactions of U.S. users spanning a period of 20 years. Innovative feature engineering techniques will be employed to create predictive features that capture nuanced patterns of fraud. By combining traditional features with novel ones, the  aim is to enhance the accuracy and robustness of the detection model.
 ##### The data comprises over a million rows. Each row corresponds to unique transactions conducted by users, encompassing comprehensive information such as sender details, receiver details, transaction amount in dollars, and, most critically, whether the transaction has been flagged as fraudulent or legitimate. It is important to note that this dataset exhibits a significant class imbalance, with a relatively low proportion of fraudulent transactions compared to legitimate ones. This inherent imbalance will be meticulously addressed and carefully managed during the model development and training process to ensure the highest levels of predictive accuracy and fraud detection efficiency.
 
 <!--- [alt text](https://github.com/Sine-Mthembu/SecureSwipe/blob/main/image.jpg?raw=true) -->
+</div>
 
 
 ![alt text](https://github.com/Sine-Mthembu/SecureSwipe/blob/main/data_dist.png?raw=true)
 # Feature Engineering and Data Analysis
 
+<div style="text-align: justify;">
+  
 Feature engineering techniques were applied to create new variables that effectively capture transaction patterns and behaviors. This involved extracting additional information from the dataset, leveraging features such as date and time. For instance, our analysis revealed that fraudulent transactions are more prevalent during nighttime compared to the morning. Additionally, we discovered that, on average, fraudulent transactions tend to involve cash payments more frequently than other transaction types.
 
-![Number of transactions per week day](timeofw.png)
+![Number of transactions per week day](time_of_day_fraudulent.png)
 
 **Figure 1:** Number of transactions per week day.
 
-![Comparison of the number of transactions for each transaction type for fraudulent transactions](trantypelabel.png)
+![Comparison of the number of transactions for each transaction type for fraudulent transactions](trans_day.png)
 
 **Figure 2:** Comparison of the number of transactions for each transaction type for fraudulent transactions.
 
