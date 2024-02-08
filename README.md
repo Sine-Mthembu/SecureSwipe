@@ -16,11 +16,11 @@
 
 Feature engineering techniques were applied to create new variables that effectively capture transaction patterns and behaviors. This involved extracting additional information from the dataset, leveraging features such as date and time. For instance, our analysis revealed that fraudulent transactions are more prevalent during nighttime compared to the morning. Additionally, we discovered that, on average, fraudulent transactions tend to involve cash payments more frequently than other transaction types.
 
-![Number of transactions per week day](time_of_w.png)
+![Number of transactions per week day](timeofw.png)
 
 **Figure 1:** Number of transactions per week day.
 
-![Comparison of the number of transactions for each transaction type for fraudulent transactions](tran_type_label.png)
+![Comparison of the number of transactions for each transaction type for fraudulent transactions](trantypelabel.png)
 
 **Figure 2:** Comparison of the number of transactions for each transaction type for fraudulent transactions.
 
